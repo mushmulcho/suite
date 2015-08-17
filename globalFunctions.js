@@ -34,7 +34,7 @@ var scope = scope || {};
     GlobalFunctions.prototype.loadCards = function (deck) {
         for (var i = 0; i < deck.cards.length; i++) {
             var img = new Image();
-            img.src = "https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing" + deck.cards[i].rank + deck.cards[i].suit + ".png";
+            img.src = "Resources" + deck.cards[i].rank + deck.cards[i].suit + ".png";
             deck.cards[i].image= img;
 
         }
@@ -43,10 +43,10 @@ var scope = scope || {};
         var context = this.ctx;
         var img = new Image();
         if(card.face){
-            img.src = "https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing" +card.rank + card.suit + ".png";
+            img.src = "Resources" +card.rank + card.suit + ".png";
         }
         else{
-            img.src = "https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing/backlizard.png";
+            img.src = "Resources/backlizard.png";
         }
 
         img.onload = function () {
@@ -75,3 +75,6 @@ var scope = scope || {};
 
 
 })(scope);
+
+//https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing#list
+//https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing
