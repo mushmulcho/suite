@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<style>
+    body {
+        background-color: grey;
+    }
+</style>
+
+
+<button onclick = "startGame('Grandfather\'s Clock')" >Grandfather's Clock</button><br>
+<button onclick = "startGame('Eight Off')" >Eight Off</button><br>
+<button onclick = "startGame('Grandfather')" >Grandfather</button><br>
+<button onclick = "startGame('TopsyTurvi Queens')" >TopsyTurvi Queens</button><br>
+<button onclick = "startGame('Prison')" >Prison</button><br>
+<button onclick = "startGame('Alternations')" >Alternations</button><br>
+<canvas id="canvas" width="1200" height="900">not supported</canvas>
+
+
+
+<script src="jquery-2.1.4.js"></script>
+<script src="globalFunctions.js"></script>
+<script src="models/Event.js"></script>
+<script src="models/Card.js"></script>
+<script src="models/Deck.js"></script>
+<script src="models/Pile.js"></script>
+<script src="GameTypes/GrandfathersClock/Game.js"></script>
+<script src="GameTypes/GrandfathersClock/Field.js"></script>
+<script src="GameTypes/GrandfathersClock/GameLogic.js"></script>
+<script src="GameTypes/EightOff/Game.js"></script>
+<script src="GameTypes/EightOff/Field.js"></script>
+<script src="GameTypes/EightOff/GameLogic.js"></script>
+<script src="GameTypes/Grandfather/Game.js"></script>
+<script src="GameTypes/Grandfather/Field.js"></script>
+<script src="GameTypes/Grandfather/GameLogic.js"></script>
+<script src="GameTypes/Prison/Game.js"></script>
+<script src="GameTypes/Prison/Field.js"></script>
+<script src="GameTypes/Prison/GameLogic.js"></script>
+<script src="GameTypes/Alternations/Game.js"></script>
+<script src="GameTypes/Alternations/Field.js"></script>
+<script src="GameTypes/Alternations/GameLogic.js"></script>
+<script src="GameTypes/TopsyQueens/Game.js"></script>
+<script src="GameTypes/TopsyQueens/Field.js"></script>
+<script src="GameTypes/TopsyQueens/GameLogic.js"></script>
+<script src="models/GameApp.js"></script>
+<script src="logic.js"></script>
+
+</body>
+</html>
