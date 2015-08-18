@@ -76,5 +76,11 @@ var scope = scope || {};
 
 })(scope);
 
-//https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing#list
-//https://drive.google.com/folderview?id=0B5FT30-zbj8KfnUxeEtiNzBhaUpjRkY4WTBBVExzUkVDeXN6SWI2bjh3cmVRcjBEcVctVjg&usp=sharing
+var currentBet = 0;
+var currentMoney = 1000;
+$("#bet").click(function(){
+    if (currentBet<currentMoney){
+        currentBet +=50;
+        $("#betMoney").text("Current Bet:"+currentBet);
+    }
+});
