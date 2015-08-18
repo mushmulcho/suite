@@ -12,6 +12,10 @@ var model = model || {};
     GameApp.prototype.winCondition = function () {
         if (this.game.gameLogic.wonGame(this.piles)) {
             console.log("you are a faggot");
+            currentMoney+=currentBet*2;
+            currentBet=0;
+            $("#currentMoney").text("Your money are"+" "+currentMoney+"€");
+            $("#betMoney").text("Current Bet:");
         }
     };
 
@@ -102,6 +106,12 @@ var model = model || {};
             this.game = eo.getGame();
             this.piles = this.game.field.generateGame();
             this.deck = this.game.deck;
+        }
+        else if(this.gameType == "End Game"){
+                currentMoney-=currentBet;
+                currentBet = 0;
+                $("#currentMoney").text("Your money are"+" "+currentMoney+"€");
+                $("#betMoney").text("Current Bet:");
         }
     };
     GameApp.prototype.moveCards = function (pileNumber,cardNumberInPile) {
