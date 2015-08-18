@@ -7,11 +7,6 @@ var eo = eo || {};
     }
 
     GameLogic.prototype.specialConditions = function (piles){
-        /*for (var i = 10; i <= 16; i++) {
-            if(piles[i].cards.length != 0 && piles[i].cards[piles[i].cards.length-1].face==false){
-                piles[i].cards[piles[i].cards.length-1].face=true;
-            }
-        }*/
 
     };
     GameLogic.prototype.canPickUp = function(pile, pileNumber, cardPosition){
@@ -43,7 +38,7 @@ var eo = eo || {};
             return false;
         }
     };
-    //won condition
+    //wиn condition
     GameLogic.prototype.wonGame = function (piles) {
         if (piles[16].cards.length==13 &&
             piles[17].cards.length==13 &&
@@ -66,7 +61,7 @@ GameLogic.prototype.canPlace = function(fieldPile, tempPile, fieldPileCard, temp
             return false;
         }
     }
-    else if(pileNumber>=10 && pileNumber<=15){
+    else if(pileNumber>=8 && pileNumber<=15){
         if(cardNumber== -1) {
             return true;
         }
